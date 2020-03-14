@@ -1,0 +1,48 @@
+html, body{
+    font-family: 'Spartan';
+    margin: 0;
+}
+
+
+.header{
+    background-color:#8EBA3E;
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+    font-family: 'Spartan';
+    color: white;
+    
+}
+
+.header h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.greeting {
+    margin-left: 50px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.mbody {
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 200%;
+}
+
+.button {
+    
+    background-color: #8EBA3E;
+    border: none;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+a:link{
+    text-decoration: none;
+    color:#8EBA3E
+}
