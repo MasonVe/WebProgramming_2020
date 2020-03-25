@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Extension Task</title>
+</head>
+
+<body>
+    <h1>EXTENSION TASK: Calculator</h1>
+
+    <input type="number" id="first">
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="second">
+
+    <br>
+
+    <button id="calculate">Calculate</button>
+
+    <p>Answer: <a id="result">0</a></p>
+    
+
+    <script type="text/javascript">
+
+        let result = 0;
+
+        let calculate = document.getElementById("calculate");
+        let operator = document.getElementById("operator");
+        let firstinput = document.getElementById("first");
+        let secondinput = document.getElementById("second");
+
+        
+
+        calculate.onclick = function(){
+            let value1 = Number(firstinput.value);
+            let value2 = Number(secondinput.value);
+
+
+
+            console.log(firstinput.value)
+            console.log(secondinput.value)
+
+            
+
+
+            result = value1 + value2;
+
+            console.log(result)
+            document.getElementById("result").innerHTML = result;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

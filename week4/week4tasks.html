@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Week 4 Tasks</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+
+    <button id="ClickMeButton">Click Me</button>
+    <br>
+    <p id="date"></p>
+    <br>
+    <button id="surprise">Surprise</button>
+
+    <script type="text/javascript">
+
+        let num = 0;
+        while(num <10){
+            console.log("Counting up... I'm at: " + num);
+            if (num == 5){
+                console.log("Woah Mum I Counted To: " + num);
+            }
+            if (num == 9){
+                console.log("Woah Mum I Counted To: " + num);
+            }
+            num++
+        }
+
+        let clickMeButton = document.getElementById("ClickMeButton");
+        let surprise =document.getElementById("surprise");
+
+
+        console.log(clickMeButton)
+
+        clickMeButton.onclick = function(){
+            document.getElementById("date").innerHTML = Date();
+        }
+
+        surprise.onclick = function(){
+            window.alert("Boo!");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

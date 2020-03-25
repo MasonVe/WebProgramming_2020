@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Week 4 Tasks</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+
+    <button id="ClickMeButton">Click Me</button>
+    <br>
+    <button id="dontClickMeButton">Don't Click Me</button>
+    <br>
+    <p><b>Counter: <a id="counter">0</a></b></p>
+    <br>
+    <button id="randomNumber">Click For Number</button>
+    <p><a id="random">0</a></p>
+
+    <br>
+    <button id="surprise">Surprise</button>
+
+    <script type="text/javascript">
+
+        let count = 0;
+        let counter = 0;
+        let random = 0;
+
+
+        let clickMeButton = document.getElementById("ClickMeButton");
+        let dontclickMeButton = document.getElementById("dontClickMeButton");
+        let randomnumber = document.getElementById("randomNumber");
+        let surprise =document.getElementById("surprise");
+
+
+        console.log(clickMeButton)
+        console.log(dontclickMeButton)
+
+        clickMeButton.onclick = function(){
+            counter++;
+            //console.log(count);
+            document.getElementById("counter").innerHTML = counter;
+        }
+
+        dontclickMeButton.onclick = function(){
+            console.log("Button Clicked");
+            dontclickMeButton.style.color = "red";
+            counter--;
+            document.getElementById("counter").innerHTML = counter;
+        }
+
+        randomnumber.onclick = function(){
+            random = Math.floor((Math.random() * 10) + 1);
+            console.log(random);
+            document.getElementById("random").innerHTML = random;
+        }
+
+        surprise.onclick = function(){
+            window.alert("Boo!");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
